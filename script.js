@@ -625,5 +625,16 @@ gsap.to(".page7-cir", {
     scroller: `#main`,
     scrub: 0.5,
   },
-  backgroundColor: `#0a3bce91`,
+  scale: 1.3,
+});
+
+gsap.to(".page7-cir-inner", {
+  scrollTrigger: {
+    trigger: `.page7-cir-inner`,
+    start: `top top`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: 0.5,
+  },
+backgroundColor:"#000000"
 });

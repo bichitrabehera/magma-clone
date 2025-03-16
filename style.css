@@ -1,10 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap");
+
+.jost {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 200; */
+  font-style: normal;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 html,
@@ -72,7 +79,7 @@ body {
 
 .bottom-page1 h1 {
   color: white;
-  font-size: 85px;
+  font-size: 70px;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -197,7 +204,7 @@ body {
   color: rgb(129, 129, 129);
 }
 
-#page5 {
+#page7 {
   position: relative;
   background-color: #1236c7;
   height: 100vh;
@@ -230,135 +237,494 @@ body {
   width: 70%;
   border-radius: 50%;
   border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  position: relative;
 }
 
-@media (max-width: 768px) {
+#page7-cir-inner h1{
+  color: white;
+  position: absolute;
+  font-weight: 400;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#page8 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0740db;
+}
+
+#page8 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page8-bottom {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.page8-bottom h1 {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 300;
+}
+
+.page8-bottom button {
+  color: #006eff;
+  padding: 10px 20px;
+  font-weight: 300;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+}
+
+#page9 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+}
+
+.left9 {
+  height: 100%;
+  width: 40%;
+  position: relative;
+}
+
+.right9 {
+  height: 100%;
+  width: 60%;
+  position: relative;
+}
+
+.left9 h1 {
+  font-size: 80px;
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+.right9-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  height: 60%;
+  width: 80%;
+  background-image: url("https://thisismagma.com/wp-content/uploads/2023/04/magma.wp2.cubdev.com-home-1.jpeg");
+  background-size: cover;
+  left: 5%;
+}
+
+#page10 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1137ca;
+}
+
+.right10 {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  left: 40%;
+}
+
+.right10-inner {
+  height: 33.3%;
+  width: 100%;
+  padding-right: 10%;
+  color: white;
+}
+
+.right10-inner h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.right10-inner p {
+  margin-top: 20px;
+  font-size: 22px;
+  color: rgba(235, 235, 235, 0.863);
+  word-spacing: 2px;
+}
+
+#page11 {
+  position: relative;
+  height: 110vh;
+  width: 100vw;
+  background-color: #fff;
+}
+#page11 > h1 {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  margin-bottom: 20px;
+  font-size: 5vw;
+  color: #000;
+  font-weight: 300;
+}
+.page11-inner {
+  display: flex;
+  top: 18%;
+  position: relative;
+  margin-bottom: 2vw;
+  left: 5%;
+  height: 24%;
+  width: 100%;
+}
+.left11 {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  left: 5%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.left11 > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.right11 {
+  padding-top: 5vw;
+  color: #000;
+  left: 50%;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+}
+.right11 > h4 {
+  font-weight: 500;
+}
+.right11 > h1 {
+  font-size: 2vw;
+}
+
+#page12 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #02268e;
+}
+.page12-inner {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  color: #fff;
+  font-family: a;
+}
+.page12-inner > h1 {
+  font-size: 6vw;
+  font-weight: 300;
+}
+.page12-inner > p {
+  margin-top: 30px;
+  font-size: 1.2vw;
+}
+
+#page13 {
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+  background-color: #0f0f17;
+  color: #fff;
+  font-family: a;
+  padding: 7vw 10vw;
+}
+#page13 > h1 {
+  font-size: 5vw;
+  line-height: 1;
+  font-weight: 300;
+}
+#page13 > button {
+  padding: 18px 35px;
+  border: none;
+  background-color: #0a3cce;
+  color: #fff;
+  border-radius: 50px;
+  margin-top: 2vw;
+}
+
+#page14 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0f0f17;
+}
+.page14-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 10vw;
+  font-family: a;
+  height: 20%;
+  width: 100%;
+  color: #fff;
+  border-top: 0.5px solid #ffffff5c;
+  border-bottom: 0.5px solid #ffffff48;
+}
+.page14-inner > i {
+  font-weight: 100;
+  font-size: 2.4vw;
+  position: relative;
+  z-index: 9999;
+}
+.page14-inner > h1 {
+  font-size: 3vw;
+  font-weight: 300;
+  position: relative;
+  z-index: 9999;
+}
+
+.center14 {
+  height: 0%;
+  width: 100%;
+  background-color: #0a3cce;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all ease 0.5s;
+}
+
+.page14-inner:hover .center14 {
+  height: 100%;
+}
+
+/* For tablets and smaller screens (max-width: 1024px) */
+@media (max-width: 1024px) {
   #page1 > nav {
-    padding: 10px 20px;
+    padding: 0px 20px;
   }
-
   #page1 > nav > img {
-    margin-top: -8vw;
-    margin-left: -15vw;
-    width: 9%;
-    height: 100px;
-    width: 200px;
+    width: 15%;
   }
-
-  .right-nav {
-    gap: 10px;
+  #right-nav > button {
+    padding: 8px 16px;
+    font-size: 14px;
   }
-
-  .right-nav > button {
-    padding: 10px 20px;
-    font-size: 22px;
-  }
-
   .bottom-page1 {
-    bottom: 25%;
+    width: 70vw;
     left: 5%;
   }
-
-  .bottom-page1 h1 {
-    font-size: 80px;
+  .bottom-page1 > h1 {
+    font-size: 6vw;
   }
-
-  .bottom-page1-inner {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  .bottom-page1-inner > h4 {
+    font-size: 2vw;
   }
-  .bottom-page1-inner h4 {
-    font-size: 16px;
+  .bottom-page1-inner > button {
+    font-size: 14px;
+    padding: 8px 16px;
   }
-
-  .bottom-page1-inner button {
-    padding: 10px 20px;
-    align-items: start;
+  #page2 > h1,
+  #page4 > h1,
+  #page6 > h1 {
+    font-size: 4.5vw;
+    width: 100%;
   }
-
-  #page2,
-  #page4,
-  #page6 {
-    padding: 0 40px;
+  #page9 .left9 > h1 {
+    font-size: 4.5vw;
   }
-
-  #page2 h1,
-  #page6 h1 {
-    font-size: 40px;
+  #page10 .right10-inner > h1 {
+    font-size: 3vw;
   }
-
-  #page4 h1 {
-    font-size: 35px;
+  #page11 > h1 {
+    font-size: 3.5vw;
   }
-
-  .page7-cir {
-    height: 50vw;
-    width: 50vw;
+  .right11 > h1 {
+    font-size: 2.5vw;
   }
-
-  #page7-cir-inner {
-    height: 60%;
-    width: 60%;
+  .page12-inner > h1 {
+    font-size: 4vw;
+  }
+  #page13 > h1 {
+    font-size: 4vw;
   }
 }
 
-@media (max-width: 480px) {
-  #page1 > nav {
-    padding: 8px 16px;
-  }
-
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
   #page1 > nav > img {
-    margin-top: -6vh;
-    margin-left: -27vw;
-    height: 90px;
-    width: 180px;
+    width: 20%;
   }
-
-  .right-nav {
-    gap: 5px;
+  .bottom-page1 {
+    width: 80vw;
+    left: 5%;
   }
-
-  .right-nav > button {
-    padding: 12px 24px;
-    font-size: 15px;
+  .bottom-page1 > h1 {
+    font-size: 7vw;
   }
-
-  .bottom-page1 h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
+  .bottom-page1-inner {
+    flex-direction: column;
+    align-items: flex-start;
   }
-
-  .bottom-page1-inner h4 {
-    font-size: 18px;
+  .bottom-page1-inner > h4 {
+    font-size: 3vw;
   }
-
-  .bottom-page1-inner button {
-    padding: 10px 20px;
+  .bottom-page1-inner > button {
+    font-size: 12px;
+    padding: 6px 12px;
   }
-
   #page2,
   #page4,
   #page6 {
-    padding: 0 20px;
+    padding: 0 5vw;
   }
-
-  #page2 h1,
-  #page6 h1 {
-    font-size: 30px;
+  #page2 > h1,
+  #page4 > h1,
+  #page6 > h1 {
+    font-size: 5vw;
   }
-
-  #page4 h1 {
-    font-size: 28px;
+  #page9 {
+    flex-direction: column;
   }
-
-  .page7-cir {
-    height: 60vw;
-    width: 60vw;
+  .left9,
+  .right9 {
+    width: 100%;
   }
+  .left9 > h1 {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .right9-center {
+    width: 90%;
+    height: 40%;
+  }
+  #page10 .right10 {
+    width: 100%;
+    left: 0;
+  }
+  .right10-inner > h1 {
+    font-size: 4vw;
+  }
+  .right10-inner > p {
+    font-size: 2vw;
+  }
+  .right11 {
+    width: 90%;
+    left: 5%;
+    padding-top: 2vw;
+  }
+  #page11 > h1 {
+    font-size: 3vw;
+  }
+  .page12-inner {
+    right: 5%;
+  }
+  .page12-inner > h1 {
+    font-size: 3.5vw;
+  }
+  #page13 {
+    padding: 10vw 5vw;
+  }
+  #page13 > h1 {
+    font-size: 4vw;
+  }
+  #page13 > button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  .page14-inner > h1 {
+    font-size: 3vw;
+  }
+  .page14-inner > i {
+    font-size: 2vw;
+  }
+}
 
-  #page7-cir-inner {
-    height: 50%;
-    width: 50%;
+/* For small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  #page1 > nav {
+    padding: 0px 10px;
+  }
+  #page1 > nav > img {
+    width: 30%;
+  }
+  .bottom-page1 {
+    width: 90vw;
+    left: 5%;
+  }
+  .bottom-page1 > h1 {
+    font-size: 8vw;
+  }
+  .bottom-page1-inner > h4 {
+    font-size: 3.5vw;
+  }
+  .bottom-page1-inner > button {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  #page2,
+  #page4,
+  #page6 {
+    padding: 0 5vw;
+  }
+  #page2 > h1,
+  #page4 > h1,
+  #page6 > h1 {
+    font-size: 6vw;
+  }
+  #page9 .left9 > h1 {
+    font-size: 6vw;
+    text-align: center;
+  }
+  .right9-center {
+    width: 95%;
+    height: 35%;
+  }
+  #page10 .right10 {
+    width: 100%;
+    left: 0;
+  }
+  .right10-inner > h1 {
+    font-size: 4.5vw;
+  }
+  .right10-inner > p {
+    font-size: 2.5vw;
+  }
+  .right11 {
+    width: 100%;
+    left: 0;
+    padding: 5vw;
+  }
+  #page11 > h1 {
+    font-size: 3.5vw;
+    left: 5%;
+  }
+  .page12-inner {
+    right: 5%;
+  }
+  .page12-inner > h1 {
+    font-size: 4vw;
+  }
+  #page13 {
+    padding: 12vw 5vw;
+  }
+  #page13 > h1 {
+    font-size: 5vw;
+  }
+  #page13 > button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  .page14-inner > h1 {
+    font-size: 4vw;
+  }
+  .page14-inner > i {
+    font-size: 2.5vw;
   }
 }

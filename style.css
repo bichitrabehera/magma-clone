@@ -22,7 +22,6 @@ body {
 #main {
   position: relative;
   overflow: hidden;
-  /* overflow: visible; */
   background-color: #1137ca;
 }
 
@@ -241,13 +240,13 @@ body {
   position: relative;
 }
 
-#page7-cir-inner h1{
+#page7-cir-inner h1 {
   color: white;
   position: absolute;
   font-weight: 400;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 #page8 {
@@ -255,6 +254,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #0740db;
+  z-index: 1;
 }
 
 #page8 > video {
@@ -291,6 +291,7 @@ body {
   width: 100vw;
   position: relative;
   display: flex;
+  background-color: #1137ca;
 }
 
 .left9 {
@@ -414,7 +415,7 @@ body {
 
 #page12 {
   position: relative;
-  height: 100vh;
+  height: 50vh;
   width: 100vw;
   background-color: #02268e;
 }
@@ -423,7 +424,6 @@ body {
   top: 20%;
   right: 10%;
   color: #fff;
-  font-family: a;
 }
 .page12-inner > h1 {
   font-size: 6vw;
@@ -459,7 +459,7 @@ body {
 
 #page14 {
   position: relative;
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
   background-color: #0f0f17;
 }
@@ -540,10 +540,14 @@ body {
     font-size: 4.5vw;
   }
   #page10 .right10-inner > h1 {
-    font-size: 3vw;
+    font-size: 4.5vw;
   }
   #page11 > h1 {
     font-size: 3.5vw;
+  }
+  .page11-inner {
+    display: flex;
+    flex-direction: column;
   }
   .right11 > h1 {
     font-size: 2.5vw;
@@ -598,7 +602,7 @@ body {
   }
   .left9 > h1 {
     font-size: 5vw;
-    text-align: center;
+    text-align: left;
   }
   .right9-center {
     width: 90%;
@@ -614,14 +618,20 @@ body {
   .right10-inner > p {
     font-size: 2vw;
   }
-  .right11 {
+
+  .page11-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .right11 {
     width: 90%;
     left: 5%;
     padding-top: 2vw;
+    display: flex;
   }
   #page11 > h1 {
-    font-size: 3vw;
-  }
+    font-size: 5vw;
+  } */
   .page12-inner {
     right: 5%;
   }
@@ -652,21 +662,25 @@ body {
     padding: 0px 10px;
   }
   #page1 > nav > img {
-    width: 30%;
+    width: 100px;
   }
   .bottom-page1 {
-    width: 90vw;
+    width: 100vw;
     left: 5%;
   }
   .bottom-page1 > h1 {
-    font-size: 8vw;
+    /* position: absolute; */
+    bottom: 50%;
+    font-size: 13vw;
   }
   .bottom-page1-inner > h4 {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
+    padding: 30px 0;
   }
   .bottom-page1-inner > button {
-    font-size: 10px;
-    padding: 5px 10px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
   }
   #page2,
   #page4,
@@ -679,52 +693,66 @@ body {
     font-size: 6vw;
   }
   #page9 .left9 > h1 {
-    font-size: 6vw;
-    text-align: center;
+    font-size: 16vw;
+    text-align: left;
   }
   .right9-center {
-    width: 95%;
-    height: 35%;
+    width: 90%;
+    height: 50%;
   }
   #page10 .right10 {
     width: 100%;
     left: 0;
   }
-  .right10-inner > h1 {
-    font-size: 4.5vw;
-  }
-  .right10-inner > p {
-    font-size: 2.5vw;
-  }
-  .right11 {
-    width: 100%;
-    left: 0;
-    padding: 5vw;
-  }
-  #page11 > h1 {
-    font-size: 3.5vw;
+
+  .right10-inner {
+    position: relative;
     left: 5%;
   }
-  .page12-inner {
+  .right10-inner h1 {
+    font-size: 10vw;
+  }
+  .right10-inner > p {
+    font-size: 4.3vw;
+  }
+  /* .right11 {
+    width: 100%;
+    left: 0;
+    /* padding: 5vw; */
+  /* } */
+  .page11-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #page11 > h1 {
+    font-size: 10vw;
+    left: 5%;
+  }
+  */ .page12-inner {
     right: 5%;
   }
   .page12-inner > h1 {
-    font-size: 4vw;
+    font-size: 13vw;
+  }
+  .page12-inner > p {
+    font-size: 3vw;
   }
   #page13 {
     padding: 12vw 5vw;
   }
   #page13 > h1 {
-    font-size: 5vw;
+    font-size: 10vw;
   }
   #page13 > button {
+    margin-top: 40px;
     padding: 10px 20px;
-    font-size: 12px;
+    font-size: 18px;
   }
   .page14-inner > h1 {
-    font-size: 4vw;
+    font-size: 9vw;
   }
   .page14-inner > i {
-    font-size: 2.5vw;
+    font-size: 10vw;
   }
 }
